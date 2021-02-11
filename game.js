@@ -111,4 +111,8 @@ function init() {
     document.querySelector(".player-1-panel").classList.remove("active");
 
     document.querySelector(".player-0-panel").classList.add("active");
+
+    window.addEventListener('load', function() {
+        alert(`Welcome!\n Start the game by rolling the dice, the number displayed on dice is added to the current score.\n If the dice shows one, then the current score becomes "0",then turn goes to other player. \n When u hold, the current score is added to the total score and then turn goes to other player. \n whenever the total score matches to the final score (default is 100),which you specify at the final score box, then the player wins! `);
+    })
 }
